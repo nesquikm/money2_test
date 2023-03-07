@@ -23,8 +23,8 @@ void main() {
         final str2 = scale == 0 ? '${intsStr}2' : '${intsStr}2.${'0' * (scale - 1)}1';
 
         final m0 = Money.fromFixedWithCurrency(Fixed.parse(str0, scale: scale), c!);
-        final m1 = Money.fromFixedWithCurrency(Fixed.parse(str1, scale: scale), c!);
-        final m2 = Money.fromFixedWithCurrency(Fixed.parse(str2, scale: scale), c!);
+        final m1 = Money.fromFixedWithCurrency(Fixed.parse(str1, scale: scale), c);
+        final m2 = Money.fromFixedWithCurrency(Fixed.parse(str2, scale: scale), c);
         final mDiff = m2 - m1;
         final mSum = m1 + m0;
 
